@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" />
+
+    <title>Todo App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+
+        <div class="tab">
+            <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openTab (event, 'Completed')">Completed</button>
+            <button class="tablinks" onclick="openTab (event, 'Deleted')">Deleted</button>
+        </div>
+        
+        <div id="Completed" class="tabcontent">
+            <ul class="completed-todo-list">
+                
+            </ul>
+        </div>
+
+        <div id="Deleted" class="tabcontent">
+            <ul class="deleted-todo-list">
+                
+            </ul>
+        </div>
+
+        <div id="Home" class="tabcontent">
+            <div class="todo-wrapper">
+                <input type="text" placeholder="Name of the item" id="todo-input">
+                <button id="todo-button">Add Item</button>
+            </div>
+    
+            <div class="todo-list-wrapper">
+                <ul class="todo-list">
+                    <!--
+                    <div>
+                        <li>Digital Logic Design</li>
+                        <button class="check"><i class="fas fa-check"></i></button>
+                        <button class="trash"><i class="fas fa-trash"></i></button>
+                    </div>
+                    <div>
+                        <li>Java Programming</li>
+                        <button class="check"><i class="fas fa-check"></i></button>
+                        <button class="trash"><i class="fas fa-trash"></i></button>
+                    </div>
+                    -->
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
